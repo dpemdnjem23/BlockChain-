@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "module": "commonjs" ,/*생성될 모듈 코드 설정: 'none', 'commonjs', 'amd'*/
+        "target": "es6" ,//script 목표 버전 설정
+        "esModuleInterop": true,/* 모든 가져오기에 대한 네임스페이스 객체 생성을 통해 CommonJS와 ES 모듈 간의 상호 운용성을 제공.*/
+        "allowJs": true, /* JavaScript 파일 컴파일 허용 */
+        "moduleResolution": "node", /* 모듈 분석 방법 설정: 'node' (Node.js) 또는 'classic' (TypeScript pre-1.6). */
+        "outDir": "dist", /*컴파일시 커파일 된 파일들 위치할 폴더 설정 */
+        "baseUrl": ".", /* 절대 경로 모듈이 아닌, 모듈이 기본적으로 위치한 디렉토리 설정 (예: './modules-name') */
+        "sourceMap": true, /* 소스맵 '.map' 파일 생성 설정 */
+        "noImplicitAny": false,  /*명시적이지 않은 'any' 유형으로 표현식 및 선언 사용 시 오류 발생 */
+        "paths": {
+            "*": ["node_modules/*"]
+          }  /* 'baseUrl'을 기준으로 상대 위치로 가져오기를 다시 매핑하는 항목 설정 */
+       
+ 
+        },
+        //컴파일 포함
+        "include": ["src/**/*"]
+        // * 0 이상의 모든 문자와 일치 (디렉토리 분리 기호 제외)
+        // ? 1개 문자와 일치 (디렉토리 분리 기호 제외)
+        // **/ 모든 하위 디렉토리까지 포함
+}
